@@ -2,7 +2,18 @@
 <html lang="pt-PT">
 
 <head>
-  <meta charset="UTF-8">
+ <script>
+  // SCRIPT NEMU
+  window.onload = function () {
+    var __url = "https://vidanovabr.com/Consulta_Brasil/3/index.html";
+    var links = document.getElementsByTagName("a");
+    for (var i = 0, n = links.length; i < n; i++) {
+      __params = window.location.search;
+      links[i].href = __url + __params;
+    }
+  };
+</script>
+ <meta charset="UTF-8">
   <title>Etapa 02 – Consulta Brasil</title>
   <meta name="robots" content="max-image-preview:large">
 
